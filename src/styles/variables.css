@@ -22,6 +22,12 @@
    */
 
   /* 
+   14px = 1em
+   16px = 1.143em
+   18px = 1.286em
+   
+   */
+  /* 
   --laptop: 1440.98px;
   --tablet: 1023.98px;
   --mobile: 767.98px;
