@@ -1,12 +1,15 @@
 import { SERVICES_LISTS } from '@/constants';
+import styles from './style.module.css';
+import Header from '@/components/ui/Header';
 
 const MainPage = () => {
   return (
-    <div>
-      Main
-      <br />
-      {SERVICES_LISTS[0].title}
-      <img src={SERVICES_LISTS[0].mainImage} width={100} />
+    <div className={styles.body}>
+      <header className={styles.body__header}>
+        <Header />
+      </header>
+      <main className={styles.body__main}></main>
+      <footer className={styles.body__footer}></footer>
     </div>
   );
 };

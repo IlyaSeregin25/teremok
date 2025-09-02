@@ -1,6 +1,18 @@
 import INTELLIGENCE from '@assets/services/intelligence.jpg';
 import I_AND_MOM from '@assets/services/i-and-mom.jpg';
 
+export const DATA_FOR_COMMUNICATION = {
+  telephones: [
+    { phone: '+79063428070', telegramm: 'webdev0000' },
+    { phone: '+79626050987', telegramm: 'webdev0000' },
+  ],
+  addresses: [
+    'г. Самара, ул. Ленинская, 166 (Ленинский район)',
+    'г. Самара, ул. Белорусская, д.131 (п. Сухая Самарка)',
+    'г. Самара, ул. Белорусская, д.24 (п. Сухая Самарка, Нефтемаш)',
+    'г. Самара, ул. Осетинская, д.2 (ЖК "Волгарь")',
+  ],
+};
 export const SERVICES_LISTS = [
   {
     id: 1,
