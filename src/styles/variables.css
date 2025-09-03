@@ -3,7 +3,7 @@
   --bg-card: #ffffff;
   --opacity: 0.4;
   --transitionDuration: 0.3s ease;
-  --padding: 25px;
+  --padding: 1.7856em;
   --borderRadius: 6px;
   --boxShadow: 0 0 0 1px #b8b8b8;
 
@@ -15,6 +15,7 @@
   --blue: #29b6f6;
   --accent: #006aff;
   --orange: #ffc863;
+  --milk: #f8f2e5;
 
   --dark-sea: #576067;
   --grey: #b8b8b8;
@@ -28,9 +29,12 @@
    */
 
   /* 
+   10px = 0.7143em
    14px = 1em
    16px = 1.143em
    18px = 1.286em
+   20px = 1.4286em
+   25px = 1.7856em
    50px = 3.5714em
    
    */
@@ -48,4 +52,14 @@
   @media (max-width: 480.98px) {
   }
    */
+}
+@media (max-width: 1023.98px) {
+  :root {
+    --padding: 0.7143em;
+  }
+}
+@media (max-width: 767.98px) {
+  :root {
+    --padding: 0.5em;
+  }
 }
