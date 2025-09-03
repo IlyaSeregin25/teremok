@@ -35,7 +35,7 @@ const Header = () => {
       <div className={`${styles.header__top}`}>
         <div className={`${styles.header_top_line__inner} container`}>
           <a href="/" className={styles.header_top_line__logo} title="Главная страница" aria-label="Главная страница">
-            <img src={LOGO} alt width={150} height={50} />
+            <img src={LOGO} alt="true" width={150} height={50} />
           </a>
           {DATA_FOR_COMMUNICATION?.telephones?.length && (
             <ul className={styles.header_top_line__telephones}>
@@ -74,7 +74,7 @@ const Header = () => {
             title="Главная страница"
             aria-label="Главная страница"
           >
-            <img src={LOGO} alt width={150} height={50} />
+            <img src={LOGO} alt="true" width={150} height={50} />
           </a>
           <nav className={styles.header__menu}>
             <ul className={styles.menu__list}>
