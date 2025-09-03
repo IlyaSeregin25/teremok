@@ -13,6 +13,28 @@ export const DATA_FOR_COMMUNICATION = {
     'г. Самара, ул. Осетинская, д.2 (ЖК "Волгарь")',
   ],
 };
+export const PAGES = [
+  {
+    name: 'Главная',
+    path: '/',
+  },
+  {
+    name: 'О нас',
+    path: '/about-us',
+  },
+  {
+    name: 'Контакты',
+    path: '/contacts',
+  },
+  {
+    name: 'Контакты',
+    path: '/contacts',
+  },
+  {
+    name: 'Контакты',
+    path: '/contacts',
+  },
+];
 export const SERVICES_LISTS = [
   {
     id: 1,

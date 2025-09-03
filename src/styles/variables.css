@@ -8,13 +8,19 @@
   --boxShadow: 0 0 0 1px #b8b8b8;
 
   --dark: #191919;
+  --white: #fff;
+  --sea: #616e74;
+  --green: #18c521;
+  --yellow: #d9ff00;
+  --blue: #29b6f6;
+  --accent: #006aff;
+  --orange: #ffc863;
+
   --dark-sea: #576067;
   --grey: #b8b8b8;
-  --white: #fff;
   --violet: #8b57c6;
   --violet-dark: #6c3eb8;
   --light: #f6f6f7;
-  --sea: #616e74;
 
   /* 
   --requiredBorder: 1px solid red;
@@ -25,6 +31,7 @@
    14px = 1em
    16px = 1.143em
    18px = 1.286em
+   50px = 3.5714em
    
    */
   /* 
