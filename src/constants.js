@@ -12,6 +12,9 @@ export const DATA_FOR_COMMUNICATION = {
     'г. Самара, ул. Белорусская, д.24 (п. Сухая Самарка, Нефтемаш)',
     'г. Самара, ул. Осетинская, д.2 (ЖК "Волгарь")',
   ],
+  socials: {
+    vk: { path: 'https://vk.com/teremoksamara' },
+  },
 };
 export const PAGES = [
   {
@@ -70,26 +73,6 @@ export const SERVICES_LIST = [
     id: 22,
     title: 'Интеллект',
     ageCategory: 'от 3 до 4,5 лет',
-    mainImage: INTELLIGENCE,
-    price: '800-4 500',
-    subtitle: 'при единовременной оплате за месяц скидка 5%',
-    url: '/intelligence',
-    page: {},
-  },
-  {
-    id: 3,
-    title: 'Интеллект',
-    age: 'от 3 до 4,5 лет',
-    mainImage: INTELLIGENCE,
-    price: '800-4 500',
-    subtitle: 'при единовременной оплате за месяц скидка 5%',
-    url: '/intelligence',
-    page: {},
-  },
-  {
-    id: 4,
-    title: 'Интеллект',
-    age: 'от 3 до 4,5 лет',
     mainImage: INTELLIGENCE,
     price: '800-4 500',
     subtitle: 'при единовременной оплате за месяц скидка 5%',
