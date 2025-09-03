@@ -11,11 +11,12 @@
   --white: #fff;
   --sea: #616e74;
   --green: #18c521;
-  --yellow: #d9ff00;
+  --yellow: yellow;
   --blue: #29b6f6;
   --accent: #006aff;
   --orange: #ffc863;
-  --milk: #f8f2e5;
+  --milk: rgb(251, 251, 251);
+
 
   --dark-sea: #576067;
   --grey: #b8b8b8;
