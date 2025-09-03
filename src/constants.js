@@ -35,7 +35,7 @@ export const PAGES = [
     path: '/contacts',
   },
 ];
-export const SERVICES_LISTS = [
+export const SERVICES_LIST = [
   {
     id: 1,
     title: 'Я и мама',
@@ -48,6 +48,26 @@ export const SERVICES_LISTS = [
   },
   {
     id: 2,
+    title: 'Интеллект',
+    age: 'от 3 до 4,5 лет',
+    mainImage: INTELLIGENCE,
+    price: '800-4 500',
+    subtitle: 'при единовременной оплате за месяц скидка 5%',
+    url: '/intelligence',
+    page: {},
+  },
+  {
+    id: 3,
+    title: 'Интеллект',
+    age: 'от 3 до 4,5 лет',
+    mainImage: INTELLIGENCE,
+    price: '800-4 500',
+    subtitle: 'при единовременной оплате за месяц скидка 5%',
+    url: '/intelligence',
+    page: {},
+  },
+  {
+    id: 4,
     title: 'Интеллект',
     age: 'от 3 до 4,5 лет',
     mainImage: INTELLIGENCE,

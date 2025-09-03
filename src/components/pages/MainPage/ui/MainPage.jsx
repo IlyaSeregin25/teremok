@@ -1,6 +1,6 @@
-import { SERVICES_LISTS } from '@/constants';
 import styles from './style.module.css';
 import Header from '@/components/ui/Header';
+import SectionServices from '@/components/ui/SectionServices';
 
 const MainPage = () => {
   return (
@@ -8,7 +8,9 @@ const MainPage = () => {
       <header className={styles.body__header}>
         <Header />
       </header>
-      <main className={styles.body__main}></main>
+      <main className={styles.body__main}>
+        <SectionServices />
+      </main>
       <footer className={styles.body__footer}></footer>
     </div>
   );
