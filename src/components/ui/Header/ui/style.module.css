@@ -81,36 +81,6 @@
   height: 50px;
   object-fit: contain;
 }
-.header_top_line__telephones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-.header_top_line__telephones li {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 1.286em;
-  font-weight: 500;
-}
-.header_top_line__telephones * a {
-  text-decoration: none;
-  transition: all var(--transitionDuration);
-}
-.header_top_line__telephones * a:hover {
-  color: var(--accent);
-  transition: all var(--transitionDuration);
-}
-.header_top_line__telephones li * svg {
-  display: block;
-  transition: all var(--transitionDuration);
-}
-.header_top_line__telephones li * svg:hover {
-  transform: scale(1.1);
-  transition: all var(--transitionDuration);
-}
 .header_top_line__addresses {
   display: flex;
   flex-direction: column;
@@ -228,11 +198,6 @@
   .header_top_line__logo {
     display: none;
   }
-  .header_top_line__telephones {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
   .header_top_line__addresses {
     gap: 2px;
   }
@@ -260,10 +225,5 @@
   }
   .header_top_line__addresses li {
     font-size: 1em;
-  }
-  .header_top_line__telephones li {
-    gap: 3px;
-    font-size: 1em;
-    font-weight: 500;
   }
 }

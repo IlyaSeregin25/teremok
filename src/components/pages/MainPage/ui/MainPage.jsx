@@ -1,6 +1,7 @@
-import styles from './style.module.css';
+import Footer from '@/components/ui/Footer';
 import Header from '@/components/ui/Header';
 import SectionServices from '@/components/ui/SectionServices';
+import styles from './style.module.css';
 
 const MainPage = () => {
   return (
@@ -11,7 +12,9 @@ const MainPage = () => {
       <main className={styles.body__main}>
         <SectionServices />
       </main>
-      <footer className={styles.body__footer}></footer>
+      <footer className={styles.body__footer}>
+        <Footer />
+      </footer>
     </div>
   );
 };
