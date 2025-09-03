@@ -1,0 +1,17 @@
+.services {
+}
+.services__inner {
+  padding-top: 1.7856em;
+}
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.4286rem;
+}
+.services__item {
+}
+.services__link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}

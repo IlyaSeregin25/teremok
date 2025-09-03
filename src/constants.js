@@ -35,11 +35,11 @@ export const PAGES = [
     path: '/contacts',
   },
 ];
-export const SERVICES_LISTS = [
+export const SERVICES_LIST = [
   {
     id: 1,
     title: 'Я и мама',
-    age: 'от 1 года до 3 лет',
+    ageCategory: 'от 1 года до 3 лет',
     mainImage: I_AND_MOM,
     price: '800-4 500',
     subtitle: 'при единовременной оплате за месяц скидка 5%',
@@ -49,7 +49,27 @@ export const SERVICES_LISTS = [
   {
     id: 2,
     title: 'Интеллект',
-    age: 'от 3 до 4,5 лет',
+    ageCategory: 'от 3 до 4,5 лет',
+    mainImage: INTELLIGENCE,
+    price: '800-4 500',
+    subtitle: 'при единовременной оплате за месяц скидка 5%',
+    url: '/intelligence',
+    page: {},
+  },
+  {
+    id: 21,
+    title: 'Интеллект',
+    ageCategory: 'от 3 до 4,5 лет',
+    mainImage: INTELLIGENCE,
+    price: '800-4 500',
+    subtitle: 'при единовременной оплате за месяц скидка 5%',
+    url: '/intelligence',
+    page: {},
+  },
+  {
+    id: 22,
+    title: 'Интеллект',
+    ageCategory: 'от 3 до 4,5 лет',
     mainImage: INTELLIGENCE,
     price: '800-4 500',
     subtitle: 'при единовременной оплате за месяц скидка 5%',

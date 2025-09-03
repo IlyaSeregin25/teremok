@@ -71,6 +71,7 @@
 .header__bottom {
   background-color: var(--orange);
   padding-block: 20px;
+  position: sticky;
 }
 .header_top_line__logo {
   display: block;
