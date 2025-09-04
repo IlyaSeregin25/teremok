@@ -1,7 +1,8 @@
-import { PATHS } from '@/constants';
+import { NavLink } from 'react-router-dom';
+import AdvantagesList from '../../AdvantagesList';
 import ARROW_RIGHT_UP from '@assets/arrow-right-up.svg?react';
 import styles from './style.module.css';
-import AdvantagesList from '../../AdvantagesList';
+import { PATHS } from '@/constants';
 
 const SectionAdvantages = () => {
   return (
@@ -22,9 +23,9 @@ const SectionAdvantages = () => {
             <div className={styles.advantages__preview_advantages}>
               <AdvantagesList />
             </div>
-            <a href={PATHS.aboutUs} className={styles.advantages__preview_link}>
+            <NavLink to={PATHS.aboutUs} className={styles.advantages__preview_link}>
               Подробнее о нас <ARROW_RIGHT_UP width={16} height={16} />
-            </a>
+            </NavLink>
           </div>
         </div>
         <div className={styles.advantages__body}>
