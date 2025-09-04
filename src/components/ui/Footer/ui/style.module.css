@@ -5,7 +5,7 @@
 }
 .footer__title {
   font-family: 'Montserrat';
-  font-size: 2rem;
+  font-size: var(--fontSizeTitle);
   font-weight: 500;
   text-align: center;
   padding: 2rem 1rem;
@@ -26,9 +26,6 @@
 }
 
 @media (max-width: 767.98px) {
-  .footer__title {
-    font-size: 1.6rem;
-  }
   .footer__info {
     padding-block: 1.5rem;
   }
