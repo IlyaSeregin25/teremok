@@ -6,6 +6,7 @@
   --padding: 1.7856em;
   --borderRadius: 6px;
   --boxShadow: 0 0 0 1px #b8b8b8;
+  --paddingBlock: 5rem;
 
   --dark: #191919;
   --white: #fff;
@@ -16,7 +17,6 @@
   --accent: #006aff;
   --orange: #ffc863;
   --milk: rgb(251, 251, 251);
-
 
   --dark-sea: #576067;
   --grey: #b8b8b8;
@@ -29,6 +29,7 @@
   --widthSideBar: 300px;
    */
 
+  --fontSizeTitle: 2rem;
   /* 
    10px = 0.7143em
    14px = 1em
@@ -62,5 +63,7 @@
 @media (max-width: 767.98px) {
   :root {
     --padding: 0.5em;
+    --paddingBlock: 4rem;
+    --fontSizeTitle: 1.6rem;
   }
 }
