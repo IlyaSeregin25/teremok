@@ -16,26 +16,23 @@ export const DATA_FOR_COMMUNICATION = {
     vk: { path: 'https://vk.com/teremoksamara' },
   },
 };
+export const PATHS = {
+  main: '/',
+  aboutUs: '/about-us',
+  contacts: '/contacts',
+};
 export const PAGES = [
   {
     name: 'Главная',
-    path: '/',
+    path: PATHS.main,
   },
   {
     name: 'О нас',
-    path: '/about-us',
+    path: PATHS.aboutUs,
   },
   {
     name: 'Контакты',
-    path: '/contacts',
-  },
-  {
-    name: 'Контакты',
-    path: '/contacts',
-  },
-  {
-    name: 'Контакты',
-    path: '/contacts',
+    path: PATHS.contacts,
   },
 ];
 export const SERVICES_LIST = [
@@ -79,4 +76,12 @@ export const SERVICES_LIST = [
     url: '/intelligence',
     page: {},
   },
+];
+export const ADVANTAGES_LIST = [
+  '«Теремок» основан в 2007 году',
+  'Занятия проводятся в «домашней», теплой обстановке',
+  'Возрастное деление на группы',
+  'Количество детей в группе 3-9 человек',
+  'Чёткая и структурная программа для каждого возраста, которая наполнена современными играми и актуальными пособиями',
+  'Каждое занятие включает творческие задания, после которых дети демонстрируют созданные своими руками шедевры (работы из солёного теста, пластилина, ниток, чая, фасоли и др.)',
 ];

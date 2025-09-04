@@ -1,6 +1,6 @@
 import ServiceCard from '@components/ui/ServiceCard';
-import styles from './style.module.css';
 import { SERVICES_LIST } from '@/constants';
+import styles from './style.module.css';
 
 const SectionServices = () => {
   return (
