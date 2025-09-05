@@ -36,7 +36,7 @@ function App() {
           element: <ContactsPage />,
         },
         {
-          path: `${PATHS.main}:pageId`,
+          path: `:pageId`,
           element: <ServicePage />,
         },
       ],
