@@ -7,18 +7,24 @@ import Phones from '../../Phones';
 
 const Header = () => {
   const [isClose, setIsClose] = useState(true);
+  function handleClickMobileMenu() {
+    setIsClose(!isClose);
+  }
   return (
     <div className={`${styles.header} `}>
       <button
         className={`${styles.burger} ${isClose ? styles.burger_hidden : styles.burger_active + ' ' + styles.burger_show}`}
-        onClick={() => setIsClose(!isClose)}
+        onClick={handleClickMobileMenu}
       >
         <span className={styles.burger__line}></span>
         <span className={styles.burger__line}></span>
         <span className={styles.burger__line}></span>
       </button>
       <div className={`${styles.overflow} ${isClose ? '' : styles.overflow_active}`}></div>
-      <div className={`${styles.mobile_menu} ${isClose ? '' : styles.mobile_menu_active}`}>
+      <div
+        className={`${styles.mobile_menu} ${isClose ? '' : styles.mobile_menu_active}`}
+        onClick={handleClickMobileMenu}
+      >
         <ul className={styles.mobile_menu__list}>
           {PAGES?.length &&
             PAGES.map((page, index) => {
@@ -71,10 +77,7 @@ const Header = () => {
                 })}
             </ul>
           </nav>
-          <button
-            className={`${styles.burger} ${isClose ? '' : styles.burger_active}`}
-            onClick={() => setIsClose(!isClose)}
-          >
+          <button className={`${styles.burger} ${isClose ? '' : styles.burger_active}`} onClick={handleClickMobileMenu}>
             <span className={styles.burger__line}></span>
             <span className={styles.burger__line}></span>
             <span className={styles.burger__line}></span>

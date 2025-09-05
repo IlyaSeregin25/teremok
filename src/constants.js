@@ -19,6 +19,8 @@ export const DATA_FOR_COMMUNICATION = {
 export const PATHS = {
   main: '/',
   aboutUs: '/about-us',
+  photos: '/photos',
+  services: '/services',
   contacts: '/contacts',
 };
 export const PAGES = [
@@ -29,6 +31,14 @@ export const PAGES = [
   {
     name: 'О нас',
     path: PATHS.aboutUs,
+  },
+  {
+    name: 'Фотографии',
+    path: PATHS.photos,
+  },
+  {
+    name: 'Услуги',
+    path: PATHS.services,
   },
   {
     name: 'Контакты',
