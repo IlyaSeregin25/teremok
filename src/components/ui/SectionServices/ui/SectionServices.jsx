@@ -1,7 +1,7 @@
 import ServiceCard from '@components/ui/ServiceCard';
 import { SERVICES_LIST } from '@/constants';
 import styles from './style.module.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const SectionServices = () => {
   return (
@@ -14,9 +14,9 @@ const SectionServices = () => {
           {SERVICES_LIST?.map(service => {
             return (
               <li key={service.id} className={styles.services__item}>
-                <NavLink to={service.url} className={styles.services__link}>
+                <Link to={service.url} className={styles.services__link}>
                   <ServiceCard data={service} />
-                </NavLink>
+                </Link>
               </li>
             );
           })}
