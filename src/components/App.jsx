@@ -5,8 +5,8 @@ import ContactsPage from './pages/ContactsPage';
 import Layout from './pages/Layout';
 import { PATHS } from '@/constants';
 import ServicesPage from './pages/ServicesPage';
+import ServicePage from './pages/ServicePage';
 import PhotosPage from './pages/PhotosPage';
-import ServicePage from './pages/ServicesPage copy';
 
 function App() {
   const router = createBrowserRouter([
