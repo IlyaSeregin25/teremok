@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, ScrollRestoration } from 'react-router-dom';
 import Footer from '@/components/ui/Footer';
 import Header from '@/components/ui/Header';
 import styles from './style.module.css';
@@ -6,6 +6,11 @@ import styles from './style.module.css';
 const Layout = () => {
   return (
     <div className={styles.body}>
+      <ScrollRestoration
+      /* getKey={(location, matches) => {
+          return location.pathname;
+        }} */
+      />
       <header className={styles.body__header}>
         <Header />
       </header>

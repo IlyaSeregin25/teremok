@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './style.module.css';
 import LOGO from '@assets/logo.png';
 import { DATA_FOR_COMMUNICATION, PAGES } from '@/constants';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Phones from '../../Phones';
 
 const Header = () => {
@@ -40,9 +40,9 @@ const Header = () => {
       </div>
       <div className={`${styles.header__top}`}>
         <div className={`${styles.header_top_line__inner} container`}>
-          <a href="/" className={styles.header_top_line__logo} title="Главная страница" aria-label="Главная страница">
+          <Link to="/" className={styles.header_top_line__logo} title="Главная страница" aria-label="Главная страница">
             <img src={LOGO} alt="true" width={150} height={50} />
-          </a>
+          </Link>
           <Phones />
           {DATA_FOR_COMMUNICATION?.addresses?.length && (
             <ul className={styles.header_top_line__addresses}>
