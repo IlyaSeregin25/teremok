@@ -1,8 +1,37 @@
 import ServiceCard from '@components/ui/ServiceCard';
 import { SERVICES_LIST } from '@/constants';
 import styles from './style.module.css';
+import { Link, NavLink } from 'react-router-dom';
 
 const SectionServices = () => {
+  const service = SERVICES_LIST[0];
+  return (
+    <>
+      <li className={styles.services__item}>
+        <a href="/i-and-mom" className={styles.services__link}>
+          <ServiceCard data={service} />
+        </a>
+        <NavLink to="/i-and-mom" className={styles.services__link}>
+          <ServiceCard data={service} />
+        </NavLink>
+        <Link to="/i-and-mom" className={styles.services__link}>
+          <ServiceCard data={service} />
+        </Link>
+      </li>
+      <li className={styles.services__item}>
+        <a href={service.url} className={styles.services__link}>
+          <ServiceCard data={service} />
+        </a>
+        <NavLink to={service.url} className={styles.services__link}>
+          <ServiceCard data={service} />
+        </NavLink>
+        <Link to={service.url} className={styles.services__link}>
+          <ServiceCard data={service} />
+        </Link>
+      </li>
+    </>
+  );
+  /* 
   return (
     <section className={styles.services} aria-labelledby="services-title">
       <div className={`${styles.services__inner} container`}>
@@ -16,6 +45,12 @@ const SectionServices = () => {
                 <a href={service.url} className={styles.services__link}>
                   <ServiceCard data={service} />
                 </a>
+                <NavLink to={service.url} className={styles.services__link}>
+                  <ServiceCard data={service} />
+                </NavLink>
+                <Link to={service.url} className={styles.services__link}>
+                  <ServiceCard data={service} />
+                </Link>
               </li>
             );
           })}
@@ -23,6 +58,7 @@ const SectionServices = () => {
       </div>
     </section>
   );
+   */
 };
 
 export default SectionServices;
