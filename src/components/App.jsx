@@ -4,6 +4,9 @@ import AboutUsPage from './pages/AboutUsPage';
 import ContactsPage from './pages/ContactsPage';
 import Layout from './pages/Layout';
 import { PATHS } from '@/constants';
+import ServicesPage from './pages/ServicesPage';
+import PhotosPage from './pages/PhotosPage';
+import ServicePage from './pages/ServicesPage copy';
 
 function App() {
   const router = createBrowserRouter([
@@ -21,8 +24,20 @@ function App() {
           element: <AboutUsPage />,
         },
         {
+          path: PATHS.photos,
+          element: <PhotosPage />,
+        },
+        {
+          path: PATHS.services,
+          element: <ServicesPage />,
+        },
+        {
           path: PATHS.contacts,
           element: <ContactsPage />,
+        },
+        {
+          path: `${PATHS.main}:pageId`,
+          element: <ServicePage />,
         },
       ],
     },
