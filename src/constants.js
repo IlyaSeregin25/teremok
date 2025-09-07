@@ -1,6 +1,15 @@
 import INTELLIGENCE from '@assets/services/intelligence.jpg';
 import I_AND_MOM from '@assets/services/i-and-mom.jpg';
 import PRESCHOOLER from '@assets/services/preschooler.jpg';
+import IMG_1 from './assets/photos/1.jpeg';
+import IMG_2 from './assets/photos/2.jpeg';
+import IMG_3 from './assets/photos/3.jpeg';
+import IMG_4 from './assets/photos/4.jpeg';
+import IMG_5 from './assets/photos/5.jpeg';
+import IMG_6 from './assets/photos/6.jpg';
+import IMG_7 from './assets/photos/7.jpg';
+import IMG_8 from './assets/photos/8.jpg';
+import IMG_9 from './assets/photos/9.jpg';
 
 export const DATA_FOR_COMMUNICATION = {
   telephones: [
@@ -249,4 +258,16 @@ export const ADVANTAGES_LIST = [
   'Количество детей в группе 3-9 человек',
   'Чёткая и структурная программа для каждого возраста, которая наполнена современными играми и актуальными пособиями',
   'Каждое занятие включает творческие задания, после которых дети демонстрируют созданные своими руками шедевры (работы из солёного теста, пластилина, ниток, чая, фасоли и др.)',
+];
+
+export const PHOTOS = [
+  { id: 1, src: IMG_1 },
+  { id: 2, src: IMG_2 },
+  { id: 3, src: IMG_3 },
+  { id: 4, src: IMG_4 },
+  { id: 5, src: IMG_5 },
+  { id: 6, src: IMG_6 },
+  { id: 7, src: IMG_7 },
+  { id: 8, src: IMG_8 },
+  { id: 9, src: IMG_9 },
 ];
