@@ -146,6 +146,11 @@
 .burger.burger_hidden {
   opacity: 0;
   visibility: hidden;
+  height: 0;
+  width: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 .menu__list {
   display: flex;
