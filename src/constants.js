@@ -25,6 +25,14 @@ export const DATA_FOR_COMMUNICATION = {
   socials: {
     vk: { path: 'https://vk.com/teremoksamara' },
   },
+  legal: [
+    { title: 'Юридические название:', description: 'ИП Борисова М.С.' },
+    { title: 'Юридический адрес:', description: 'г. Самара, ул. Ленинская, 166 Уточнить' },
+    { title: 'Фактический адрес:', description: 'г. Самара, ул. Ленинская, 166 Уточнить' },
+    { title: 'ИНН:', description: '631503358992' },
+    { title: 'Р/с:', description: 'Уточнить' },
+    { title: 'К/с:', description: 'Уточнить' },
+  ],
 };
 export const PATHS = {
   main: '/',

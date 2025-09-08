@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import styles from './style.module.css';
-import LOGO from '@assets/logo.png';
-import { DATA_FOR_COMMUNICATION, PAGES } from '@/constants';
 import { Link, NavLink } from 'react-router-dom';
 import Phones from '../../Phones';
+import Addresses from '../../Addresses';
+import { PAGES } from '@/constants';
+import LOGO from '@assets/logo.png';
+import styles from './style.module.css';
 
 const Header = () => {
   const [isClose, setIsClose] = useState(true);
   function handleClickMobileMenu() {
     setIsClose(!isClose);
+    isClose ? document.body.classList.add('lock') : document.body.classList.remove('lock');
   }
   return (
     <div className={`${styles.header} `}>
@@ -20,7 +22,10 @@ const Header = () => {
         <span className={styles.burger__line}></span>
         <span className={styles.burger__line}></span>
       </button>
-      <div className={`${styles.overflow} ${isClose ? '' : styles.overflow_active}`}></div>
+      <div
+        className={`${styles.overflow} ${isClose ? '' : styles.overflow_active}`}
+        onClick={handleClickMobileMenu}
+      ></div>
       <div
         className={`${styles.mobile_menu} ${isClose ? '' : styles.mobile_menu_active}`}
         onClick={handleClickMobileMenu}
@@ -43,14 +48,12 @@ const Header = () => {
           <Link to="/" className={styles.header_top_line__logo} title="Главная страница" aria-label="Главная страница">
             <img src={LOGO} alt="true" width={150} height={50} />
           </Link>
-          <Phones />
-          {DATA_FOR_COMMUNICATION?.addresses?.length && (
-            <ul className={styles.header_top_line__addresses}>
-              {DATA_FOR_COMMUNICATION.addresses.map((addresses, index) => {
-                return <li key={index}>{addresses}</li>;
-              })}
-            </ul>
-          )}
+          <div className={styles.header_top_line__phones}>
+            <Phones />
+          </div>
+          <div className={styles.header_top_line__addresses}>
+            <Addresses />
+          </div>
         </div>
       </div>
       <div className={styles.header__bottom}>
