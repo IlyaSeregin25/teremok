@@ -6,6 +6,9 @@
   color: var(--dark);
   background-color: var(--white);
 }
+body.lock {
+  overflow: hidden;
+}
 .container {
   max-width: 1200px;
   width: 100%;

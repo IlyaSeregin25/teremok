@@ -1,9 +1,7 @@
 .telephones {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  gap: 1rem 2rem;
 }
 .telephones.column {
   flex-direction: column;
@@ -11,7 +9,7 @@
 .telephones li {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.5rem;
   font-size: 1.286em;
   font-weight: 500;
 }
@@ -25,22 +23,24 @@
 }
 .telephones li * svg {
   display: block;
+  height: 2.8572rem;
+  width: 2.8572rem;
   transition: all var(--transitionDuration);
 }
 .telephones li * svg:hover {
   transform: scale(1.1);
   transition: all var(--transitionDuration);
 }
+
 @media (max-width: 767.98px) {
   .telephones {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
   }
 }
 @media (max-width: 480.98px) {
   .telephones li {
-    gap: 3px;
+    gap: 0.3rem;
     font-size: 1em;
     font-weight: 500;
   }
