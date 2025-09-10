@@ -49,13 +49,13 @@
   border-radius: 8px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.286em;
+  font-size: 1.286rem;
   font-weight: 600;
   transition: all var(--transitionDuration);
 }
 .mobile_menu__item_active {
-  color: var(--accent);
-  background-color: var(--yellow);
+  color: white;
+  background-color: var(--green);
   transition: all var(--transitionDuration);
 }
 .header__top {
@@ -65,9 +65,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
+  gap: 1.4286rem;
   flex-wrap: wrap;
   background-color: var(--white);
+}
+.header_top_line__contacts {
 }
 .header__bottom {
   background-color: var(--orange);
@@ -78,8 +80,8 @@
   display: block;
 }
 .header_top_line__logo img {
-  width: 150px;
-  height: 50px;
+  width: 300px;
+  height: 100px;
   object-fit: contain;
 }
 .header_top_line__addresses {
@@ -87,6 +89,8 @@
 }
 .header__bottom_inner {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header_bottom_line__logo {
   display: none;
@@ -100,11 +104,11 @@
 }
 .burger {
   opacity: 0;
+  display: none;
   visibility: hidden;
   margin-left: auto;
   width: 4em;
   height: 3.5714em;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 0.53125rem 0.265625rem;
@@ -157,7 +161,7 @@
   align-items: center;
   justify-content: start;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 2.2rem;
 }
 .menu__item {
 }
@@ -167,33 +171,30 @@
   border-radius: 8px;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.286em;
+  font-size: 1.5714rem;
   font-weight: 500;
+  background-color: var(--yellow);
   transition: all var(--transitionDuration);
 }
 .menu__item a:hover {
   color: var(--accent);
-  background-color: var(--yellow);
+  background-color: var(--green);
   transition: all var(--transitionDuration);
 }
-.menu__item_active {
-  color: var(--accent);
-  background-color: var(--yellow);
+.menu__item a.menu__item_active {
+  color: white;
+  background-color: var(--green);
   transition: all var(--transitionDuration);
 }
 
 @media (max-width: 1023.98px) {
   .menu__list {
-    gap: 20px;
-  }
-  .menu__item a {
-    font-size: 1.143em;
+    gap: 1.4286rem;
   }
 }
 @media (max-width: 767.98px) {
   .header_top_line__inner {
-    gap: 10px;
-    flex-direction: column;
+    gap: 0.8rem;
   }
   .header_top_line__logo {
     display: none;
@@ -207,6 +208,7 @@
   .burger {
     opacity: 1;
     visibility: visible;
+    display: flex;
   }
 }
 @media (max-width: 480.98px) {

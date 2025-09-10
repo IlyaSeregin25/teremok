@@ -1,9 +1,30 @@
 .advantages {
-  background-color: var(--milk);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.advantages__inner.cl::after {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.advantages__inner.cl .advantages__preview_title,
+.advantages__inner.cl .advantages__preview_subtitle,
+.advantages__inner.cl {
+  color: var(--yellow);
+  color: white;
+}
+.advantages__inner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: -1;
 }
 .advantages__inner {
   padding-block: var(--paddingBlock);
   display: flex;
+  position: relative;
 }
 .advantages__preview {
   flex: 0 0 550px;
