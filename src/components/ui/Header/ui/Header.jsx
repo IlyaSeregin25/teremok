@@ -45,12 +45,12 @@ const Header = () => {
       </div>
       <div className={`${styles.header__top}`}>
         <div className={`${styles.header_top_line__inner} container`}>
-          <Link to="/" className={styles.header_top_line__logo} title="Главная страница" aria-label="Главная страница">
-            <img src={LOGO} alt="true" width={150} height={50} />
-          </Link>
-          <div className={styles.header_top_line__phones}>
+          <div className={styles.header_top_line__contacts}>
             <Phones />
           </div>
+          <Link to="/" className={styles.header_top_line__logo} title="Главная страница" aria-label="Главная страница">
+            <img src={LOGO} alt="true" width={300} height={100} />
+          </Link>
           <div className={styles.header_top_line__addresses}>
             <Addresses />
           </div>
