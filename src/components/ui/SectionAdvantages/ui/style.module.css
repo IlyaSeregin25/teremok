@@ -5,15 +5,6 @@
   position: relative;
   z-index: 1;
 }
-.advantages__inner.cl::after {
-  background-color: rgba(0, 0, 0, 0.4);
-}
-.advantages__inner.cl .advantages__preview_title,
-.advantages__inner.cl .advantages__preview_subtitle,
-.advantages__inner.cl {
-  color: var(--yellow);
-  color: white;
-}
 .advantages__inner::after {
   content: '';
   position: absolute;
@@ -23,14 +14,48 @@
 }
 .advantages__inner {
   padding-block: var(--paddingBlock);
-  display: flex;
   position: relative;
 }
+.advantages__title {
+  font-family: 'Montserrat';
+  font-size: var(--fontSizeTitle);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-inline: 5%;
+  color: red;
+}
+.advantages__title span:first-child {
+  margin-right: 1rem;
+}
+.advantages__title span:last-child {
+  margin-left: 1rem;
+}
+.advantages__title span {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.advantages__subtitle {
+  text-align: center;
+  padding-inline: 20%;
+  font-family: 'Montserrat';
+  font-size: 1.143rem;
+  line-height: 1.5;
+  margin-bottom: 3.5rem;
+  font-weight: 600;
+}
+.advantages__wrapper {
+  display: flex;
+}
 .advantages__preview {
-  flex: 0 0 550px;
+  flex: 0 0 39.2rem;
 }
 .advantages__preview_main {
-  margin-right: 2rem;
+  margin-right: 3rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -40,7 +65,6 @@
   font-family: 'Montserrat';
   font-size: var(--fontSizeTitle);
   font-weight: 500;
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 .advantages__preview_subtitle {
@@ -50,7 +74,6 @@
   font-size: 1.286rem;
   font-weight: 400;
   font-weight: 500;
-  color: var(--sea);
 }
 .advantages__preview_subtitle p:not(:last-child) {
   margin-bottom: 0.5rem;
@@ -111,11 +134,20 @@
   }
 }
 @media (max-width: 767.98px) {
+  .advantages__subtitle {
+    padding-inline: 10%;
+  }
   .advantages__preview_subtitle {
     font-size: 1.143rem;
   }
 }
 @media (max-width: 480.98px) {
+  .advantages__title {
+    margin-bottom: 1rem;
+  }
+  .advantages__subtitle {
+    font-weight: 400;
+  }
   .advantages__preview_title {
     font-size: 1.286rem;
   }

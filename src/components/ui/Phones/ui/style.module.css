@@ -10,8 +10,13 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 1.286em;
+  font-size: 1.286rem;
   font-weight: 500;
+}
+.telephones.wide li {
+  color: #b91313;
+  font-size: 1.8571rem;
+  font-weight: 600;
 }
 .telephones * a {
   text-decoration: none;
@@ -41,7 +46,11 @@
 @media (max-width: 480.98px) {
   .telephones li {
     gap: 0.3rem;
-    font-size: 1em;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .telephones.wide li {
+    font-size: 1.4286rem;
     font-weight: 500;
   }
 }
