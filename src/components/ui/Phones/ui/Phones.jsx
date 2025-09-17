@@ -2,8 +2,9 @@ import { DATA_FOR_COMMUNICATION } from '@/constants';
 import TELEGRAM from '@assets/telegram.svg?react';
 import styles from './style.module.css';
 
-const Phones = ({ clName }) => {
-  const cl = clName === 'column' && styles.column;
+const Phones = ({ clName, wide }) => {
+  let cl = clName === 'column' && styles.column;
+  cl = wide === 'wide' ? `${styles.wide} + ${cl}` : cl;
   return (
     <>
       {DATA_FOR_COMMUNICATION?.telephones?.length && (
