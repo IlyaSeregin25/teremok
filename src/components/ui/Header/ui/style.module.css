@@ -77,11 +77,11 @@
   position: sticky;
 }
 .header_top_line__logo {
-  display: block;
 }
 .header_top_line__logo img {
-  width: 300px;
-  height: 100px;
+  display: block;
+  width: 21.4285rem;
+  height: 7.143rem;
   object-fit: contain;
 }
 .header_top_line__addresses {
@@ -190,6 +190,11 @@
 @media (max-width: 1023.98px) {
   .menu__list {
     gap: 1.4286rem;
+  }
+}
+@media (max-width: 889.98px) {
+  .header_top_line__logo img {
+    width: 13rem;
   }
 }
 @media (max-width: 767.98px) {

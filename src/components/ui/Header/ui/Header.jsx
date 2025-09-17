@@ -46,7 +46,7 @@ const Header = () => {
       <div className={`${styles.header__top}`}>
         <div className={`${styles.header_top_line__inner} container`}>
           <div className={styles.header_top_line__contacts}>
-            <Phones />
+            <Phones wide={'wide'} />
           </div>
           <Link to="/" className={styles.header_top_line__logo} title="Главная страница" aria-label="Главная страница">
             <img src={LOGO} alt="true" width={300} height={100} />
