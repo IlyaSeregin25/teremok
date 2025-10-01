@@ -3,16 +3,29 @@ import AdvantagesList from '../../AdvantagesList';
 import ARROW_RIGHT_UP from '@assets/arrow-right-up.svg?react';
 import styles from './style.module.css';
 import { PATHS } from '@/constants';
-import BG_1 from '@assets/bg1.jpg';
-import BG_2 from '@assets/bg2.jpg';
+import BG from '@assets/bg2.jpg';
+import BG_900 from '@assets/bg2_900.jpg';
+import BG_600 from '@assets/bg2_600.jpg';
 import ICON from '@assets/rainbow.png';
 
 const SectionAdvantages = () => {
+  const windowWidth = typeof window !== 'undefined' ? window.innerWidth : null;
+  let urlBg;
+  if (windowWidth) {
+    urlBg = BG;
+    if (windowWidth <= 900) {
+      urlBg = BG_900;
+    }
+    if (windowWidth <= 600) {
+      urlBg = BG_600;
+    }
+  }
+
   return (
     <>
-      <section className={styles.advantages} style={{ backgroundImage: `url(${BG_2})` }}>
+      <section className={styles.advantages} style={{ backgroundImage: `url(${urlBg})` }} aria-labelledby="Advantages">
         <div className={`${styles.advantages__inner} container`}>
-          <h2 className={styles.advantages__title}>
+          <h2 className={styles.advantages__title} id="Advantages">
             <span style={{ backgroundImage: `url(${ICON})` }}></span>Добро пожаловать в Детский развивающий центр
             «Теремок»!
             <span style={{ backgroundImage: `url(${ICON})` }}></span>
