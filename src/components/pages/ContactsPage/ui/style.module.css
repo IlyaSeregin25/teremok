@@ -14,13 +14,16 @@
 }
 .contacts__list {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   gap: 3rem 2rem;
   margin-bottom: 3rem;
 }
 .contacts__card {
   display: flex;
   flex-direction: column;
+}
+.contacts__card.contacts__card_wide {
+  grid-column: -1 / 1;
 }
 .contacts__card_title {
   font-family: 'Montserrat';
@@ -35,27 +38,7 @@
   height: 35.714rem;
   margin-bottom: 3rem;
 }
-.contacts__legal {
-}
-.contacts__legal_title {
-  font-family: 'Montserrat';
-  font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 2rem;
-}
-.contacts__legal_info {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 0.4rem;
-  font-family: 'Roboto', Arial, sans-serif;
-  font-size: 1.286rem;
-  font-weight: 500;
-}
-.contacts__legal_info * span {
-  font-weight: 400;
-}
+
 @media (max-width: 1023.98px) {
   .contacts__map {
     height: 28.571rem;
@@ -64,13 +47,7 @@
     grid-template-columns: 1fr 1fr;
     margin-bottom: 2rem;
   }
-  .contacts__card.contacts__card_wide {
-    grid-column: -1 / 1;
-  }
   .contacts__card_title {
-    margin-bottom: 1.5rem;
-  }
-  .contacts__legal_title {
     margin-bottom: 1.5rem;
   }
 }
@@ -80,8 +57,5 @@
   }
   .contacts__map {
     height: 25rem;
-  }
-  .contacts__legal_info {
-    font-size: 1.143rem;
   }
 }

@@ -3,7 +3,6 @@ import Socials from '@/components/ui/Socials';
 import Addresses from '@/components/ui/Addresses';
 import MapIFrame from '@/components/ui/Map';
 import styles from './style.module.css';
-import { DATA_FOR_COMMUNICATION } from '@/constants';
 
 const ContactsPage = () => {
   return (
@@ -26,24 +25,12 @@ const ContactsPage = () => {
           <div className={`${styles.contacts__card} ${styles.contacts__card_wide}`}>
             <h4 className={styles.contacts__card_title}>Наши адреса</h4>
             <div className={styles.contacts__card_body}>
-              <Addresses />
+              <Addresses withImage={true} />
             </div>
           </div>
         </div>
         <div className={styles.contacts__map}>
           <MapIFrame />
-        </div>
-        <div className={styles.contacts__legal}>
-          <h4 className={styles.contacts__legal_title}>Юридическая информация</h4>
-          <div className={styles.contacts__legal_info}>
-            {DATA_FOR_COMMUNICATION?.legal?.map((elem, ind) => {
-              return (
-                <p key={ind}>
-                  {elem.title} <span>{elem.description}</span>
-                </p>
-              );
-            })}
-          </div>
         </div>
       </div>
     </section>
