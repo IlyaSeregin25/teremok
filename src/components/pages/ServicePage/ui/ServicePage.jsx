@@ -5,29 +5,24 @@ import styles from './style.module.css';
 const ServicePage = () => {
   const { pageId } = useParams();
   const data = SERVICES_LIST?.filter(({ url }) => url.replace('/', '') == pageId);
-  const { ageCategory, mainImage, title, subtitle, price, page } = data[0];
+  const { ageCategory, mainImage, title, price, priceSinglePayment, priceAbonement, page } = data[0];
 
   return (
     <>
       <section className={styles.service_page}>
         <div className={`${styles.service_page__inner} container`}>
-          <h2 className={styles.service_page__title}>
-            {title} ({ageCategory})
-          </h2>
+          <h2 className={styles.service_page__title}>{title}</h2>
           <div className={styles.service_page__image}>
             <img src={mainImage} alt="" width={410} height={450} />
           </div>
           <div className={styles.service_page__info}>
-            <h2 className={`${styles.service_page__title} ${styles.service_page__title_info}`}>
-              {title} ({ageCategory})
-            </h2>
+            <h2 className={`${styles.service_page__title} ${styles.service_page__title_info}`}>{title}</h2>
             <div className={styles.service_page__subtitle}>
-              <p className={styles.service_page__subtitle_price}>{price} ₽</p>
-              <p className={styles.service_page__subtitle_text}>{subtitle}</p>
-              <div className={styles.service_page__subtitle_notes}>
-                {page.notes?.map((elem, ind) => (
-                  <p key={ind}>{elem}</p>
-                ))}
+              <p>{ageCategory}</p>
+              <div className={styles.service_page__subtitle_prices}>
+                {price && <p>{price} ₽</p>}
+                {priceSinglePayment && <p>{priceSinglePayment} ₽</p>}
+                {priceAbonement && <p>{priceAbonement} ₽</p>}
               </div>
             </div>
             <div className={styles.service_page__description}>
