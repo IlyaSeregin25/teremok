@@ -22,7 +22,7 @@ const Phones = ({ clName, wide }) => {
                   </a>
                 )}
                 <a href={`tel:${people.phone}`} target="_blank">
-                  {people.phone}
+                  {people.display}
                 </a>
               </li>
             );

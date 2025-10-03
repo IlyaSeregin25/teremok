@@ -9,7 +9,7 @@
 }
 .addresses__list li {
   font-size: 1.286rem;
-  font-weight: 500;
+  font-weight: 600;
   color: inherit;
 }
 
@@ -19,11 +19,7 @@
   }
   .addresses__list li {
     font-size: 1.143rem;
-    font-weight: 400;
   }
 }
 @media (max-width: 480.98px) {
-  .addresses__list li {
-    font-size: 1rem;
-  }
 }
