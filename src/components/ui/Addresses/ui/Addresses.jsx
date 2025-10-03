@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './style.module.css';
 import { DATA_FOR_COMMUNICATION } from '@/constants';
+import styles from './style.module.css';
 
 const Addresses = () => {
   return (

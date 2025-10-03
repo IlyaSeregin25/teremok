@@ -15,6 +15,7 @@ export const DATA_FOR_COMMUNICATION = {
   telephones: [
     {
       phone: '+79063428070',
+      display: '+7 (906) 342 80 70',
       //telegram: 'webdev0000' ,
     },
   ],
