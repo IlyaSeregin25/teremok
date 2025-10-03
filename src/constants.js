@@ -1,6 +1,10 @@
 import INTELLIGENCE from '@assets/services/intelligence.jpg';
 import I_AND_MOM from '@assets/services/i-and-mom.jpg';
 import PRESCHOOLER from '@assets/services/preschooler.jpg';
+import ADDRESS_1 from '@assets/addresses/address_2.jpg';
+import ADDRESS_2 from '@assets/addresses/address_2.jpg';
+import ADDRESS_3 from '@assets/addresses/address_2.jpg';
+import ADDRESS_4 from '@assets/addresses/address_4.jpg';
 import IMG_1 from './assets/photos/1.jpeg';
 import IMG_2 from './assets/photos/2.jpeg';
 import IMG_3 from './assets/photos/3.jpeg';
@@ -20,10 +24,10 @@ export const DATA_FOR_COMMUNICATION = {
     },
   ],
   addresses: [
-    'г. Самара, ул. Ленинская, 166',
-    'г. Самара, ул. Белорусская, д.131',
-    'г. Самара, ул. Белорусская, д.24',
-    'г. Самара, ул. Осетинская, д.2',
+    { address: 'г. Самара, ул. Ленинская, 166', img: ADDRESS_1 },
+    { address: 'г. Самара, ул. Белорусская, д.131', img: ADDRESS_2 },
+    { address: 'г. Самара, ул. Белорусская, д.24', img: ADDRESS_3 },
+    { address: 'г. Самара, ул. Осетинская, д.2', img: ADDRESS_4 },
     /*     'г. Самара, ул. Ленинская, 166 (Ленинский район)',
     'г. Самара, ул. Белорусская, д.131 (п. Сухая Самарка)',
     'г. Самара, ул. Белорусская, д.24 (п. Сухая Самарка, Нефтемаш)',
@@ -33,14 +37,6 @@ export const DATA_FOR_COMMUNICATION = {
     vk: { path: 'https://vk.com/teremoksamara' },
     telegram: { path: 'https://telegram.me/webdev0000' },
   },
-  legal: [
-    { title: 'Юридические название:', description: 'ИП Борисова М.С.' },
-    { title: 'Юридический адрес:', description: 'г. Самара, ул. Ленинская, 166 Уточнить' },
-    { title: 'Фактический адрес:', description: 'г. Самара, ул. Ленинская, 166 Уточнить' },
-    { title: 'ИНН:', description: '631503358992' },
-    { title: 'Р/с:', description: 'Уточнить' },
-    { title: 'К/с:', description: 'Уточнить' },
-  ],
 };
 export const PATHS = {
   main: '/',
