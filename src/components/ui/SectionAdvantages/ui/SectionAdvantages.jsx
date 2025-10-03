@@ -1,12 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import AdvantagesList from '../../AdvantagesList';
 import ARROW_RIGHT_UP from '@assets/arrow-right-up.svg?react';
-import styles from './style.module.css';
 import { PATHS } from '@/constants';
 import BG from '@assets/bg2.jpg';
 import BG_900 from '@assets/bg2_900.jpg';
 import BG_600 from '@assets/bg2_600.jpg';
-import ICON from '@assets/rainbow.png';
+import styles from './style.module.css';
 
 const SectionAdvantages = () => {
   const windowWidth = typeof window !== 'undefined' ? window.innerWidth : null;
@@ -26,9 +25,7 @@ const SectionAdvantages = () => {
       <section className={styles.advantages} style={{ backgroundImage: `url(${urlBg})` }} aria-labelledby="Advantages">
         <div className={`${styles.advantages__inner} container`}>
           <h2 className={styles.advantages__title} id="Advantages">
-            <span style={{ backgroundImage: `url(${ICON})` }}></span>Добро пожаловать в Детский развивающий центр
-            «Теремок»!
-            <span style={{ backgroundImage: `url(${ICON})` }}></span>
+            Добро пожаловать в Детский развивающий центр «Теремок»!
           </h2>
           <p className={styles.advantages__subtitle}>
             Через игру развиваем интеллект, творческое мышление и мелкую моторику у детей от 1 до 7 лет
@@ -38,19 +35,16 @@ const SectionAdvantages = () => {
               <div className={styles.advantages__preview_main}>
                 <h3 className={styles.advantages__preview_title}>Наши преимущества:</h3>
                 <div className={styles.advantages__preview_subtitle}>
+                  <p>Наш «Теремок» — это удивительный мир, наполненный детскими голосами, играми, музыкой и смехом.</p>
                   <p>
-                    ! Наш «Теремок» — это удивительный мир, наполненный детскими голосами, играми, музыкой и смехом.
+                    Наш Главный принцип – получение удовольствия от игры, а через игру интересные и незабываемые знания.
                   </p>
                   <p>
-                    ! Наш Главный принцип – получение удовольствия от игры, а через игру интересные и незабываемые
-                    знания.
-                  </p>
-                  <p>
-                    ! Наше главное богатство - это наши педагоги, именно они прививают детям веру в себя, любовь к миру,
+                    Наше главное богатство - это наши педагоги, именно они прививают детям веру в себя, любовь к миру,
                     потребность задавать вопросы и узнавать новое.
                   </p>
                   <p>
-                    ! У нас атмосфера семейного уюта и комфорта, которая дарят отличное настроение и помогает приобрести
+                    У нас атмосфера семейного уюта и комфорта, которая дарят отличное настроение и помогает приобрести
                     новые знания, умения, навыки нашим малышам.
                   </p>
                 </div>

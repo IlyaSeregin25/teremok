@@ -45,21 +45,18 @@
 .card__title {
   font-size: 1.4286em;
   font-weight: 600;
+  margin-bottom: 0.2rem;
   transition: all var(--transitionDuration);
 }
 .card__age_category {
-  margin-top: 0.2em;
-  font-size: 1.143em;
+  font-size: 1.143rem;
   font-weight: 500;
+  margin-bottom: 1rem;
 }
-.card__subtitle {
-  flex-grow: 1;
-  margin-top: 1em;
-  font-family: 'Roboto';
-  font-size: 1.143em;
-  color: var(--sea);
-}
-.card__price {
+.card__prices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-top: 0.2em;
   font-size: 1.4286em;
   font-weight: 500;

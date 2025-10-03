@@ -25,24 +25,10 @@
   margin-inline: 5%;
   color: red;
 }
-.advantages__title span:first-child {
-  margin-right: 1rem;
-}
-.advantages__title span:last-child {
-  margin-left: 1rem;
-}
-.advantages__title span {
-  display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 .advantages__subtitle {
   text-align: center;
   padding-inline: 20%;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   font-size: 1.143rem;
   line-height: 1.5;
   margin-bottom: 3.5rem;
@@ -61,22 +47,22 @@
   flex-direction: column;
 }
 .advantages__preview_title {
-  width: 90%;
+  margin-inline: 5%;
+  text-align: center;
   font-family: 'Montserrat';
   font-size: var(--fontSizeTitle);
   font-weight: 500;
+  color: red;
   margin-bottom: 1rem;
 }
 .advantages__preview_subtitle {
   flex-grow: 1;
   font-family: 'Roboto';
-  font-family: 'Montserrat';
   font-size: 1.286rem;
   font-weight: 400;
-  font-weight: 500;
 }
 .advantages__preview_subtitle p:not(:last-child) {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .advantages__preview_subtitle p:last-child {
   margin-bottom: 3rem;
@@ -129,6 +115,9 @@
   .advantages__preview {
     flex: 0 0 100%;
   }
+  .advantages__preview_subtitle {
+    text-align: center;
+  }
   .advantages__preview_link {
     align-self: center;
   }
@@ -144,9 +133,6 @@
 @media (max-width: 480.98px) {
   .advantages__title {
     margin-bottom: 1rem;
-  }
-  .advantages__subtitle {
-    font-weight: 400;
   }
   .advantages__preview_title {
     font-size: 1.286rem;
